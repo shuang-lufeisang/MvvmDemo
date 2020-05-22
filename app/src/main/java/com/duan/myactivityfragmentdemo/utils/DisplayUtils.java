@@ -16,8 +16,6 @@
 
 package com.duan.myactivityfragmentdemo.utils;
 
-import com.kunminx.architecture.utils.Utils;
-
 /**
  * Create by KunMinX at 19/7/20
  */

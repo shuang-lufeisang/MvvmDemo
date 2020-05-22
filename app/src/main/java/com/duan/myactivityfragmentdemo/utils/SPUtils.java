@@ -6,8 +6,6 @@ import android.content.SharedPreferences;
 
 import androidx.annotation.NonNull;
 
-import com.kunminx.architecture.utils.Utils;
-
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
@@ -24,7 +22,7 @@ import java.util.Set;
 @SuppressLint("ApplySharedPref")
 public final class SPUtils {
 
-    private static final Map<String, com.kunminx.architecture.utils.SPUtils> SP_UTILS_MAP = new HashMap<>();
+    private static final Map<String, SPUtils> SP_UTILS_MAP = new HashMap<>();
     private final SharedPreferences sp;
 
     private SPUtils(final String spName) {
@@ -36,51 +34,51 @@ public final class SPUtils {
     }
 
     /**
-     * Return the single {@link com.kunminx.architecture.utils.SPUtils} instance
+     * Return the single {@link SPUtils} instance
      *
-     * @return the single {@link com.kunminx.architecture.utils.SPUtils} instance
+     * @return the single {@link SPUtils} instance
      */
-    public static com.kunminx.architecture.utils.SPUtils getInstance() {
+    public static SPUtils getInstance() {
         return getInstance("", Context.MODE_PRIVATE);
     }
 
     /**
-     * Return the single {@link com.kunminx.architecture.utils.SPUtils} instance
+     * Return the single {@link SPUtils} instance
      *
      * @param mode Operating mode.
-     * @return the single {@link com.kunminx.architecture.utils.SPUtils} instance
+     * @return the single {@link SPUtils} instance
      */
-    public static com.kunminx.architecture.utils.SPUtils getInstance(final int mode) {
+    public static SPUtils getInstance(final int mode) {
         return getInstance("", mode);
     }
 
     /**
-     * Return the single {@link com.kunminx.architecture.utils.SPUtils} instance
+     * Return the single {@link SPUtils} instance
      *
      * @param spName The name of sp.
-     * @return the single {@link com.kunminx.architecture.utils.SPUtils} instance
+     * @return the single {@link SPUtils} instance
      */
-    public static com.kunminx.architecture.utils.SPUtils getInstance(String spName) {
+    public static SPUtils getInstance(String spName) {
         return getInstance(spName, Context.MODE_PRIVATE);
     }
 
     /**
-     * Return the single {@link com.kunminx.architecture.utils.SPUtils} instance
+     * Return the single {@link SPUtils} instance
      *
      * @param spName The name of sp.
      * @param mode   Operating mode.
-     * @return the single {@link com.kunminx.architecture.utils.SPUtils} instance
+     * @return the single {@link SPUtils} instance
      */
-    public static com.kunminx.architecture.utils.SPUtils getInstance(String spName, final int mode) {
+    public static SPUtils getInstance(String spName, final int mode) {
         if (isSpace(spName)) {
             spName = "spUtils";
         }
-        com.kunminx.architecture.utils.SPUtils spUtils = SP_UTILS_MAP.get(spName);
+        SPUtils spUtils = SP_UTILS_MAP.get(spName);
         if (spUtils == null) {
-            synchronized (com.kunminx.architecture.utils.SPUtils.class) {
+            synchronized (SPUtils.class) {
                 spUtils = SP_UTILS_MAP.get(spName);
                 if (spUtils == null) {
-                    spUtils = new com.kunminx.architecture.utils.SPUtils(spName, mode);
+                    spUtils = new SPUtils(spName, mode);
                     SP_UTILS_MAP.put(spName, spUtils);
                 }
             }

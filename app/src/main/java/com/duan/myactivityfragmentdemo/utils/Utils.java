@@ -135,14 +135,14 @@ public final class Utils {
     static Context getTopActivityOrApp() {
         if (isAppForeground()) {
             Activity topActivity = ACTIVITY_LIFECYCLE.getTopActivity();
-            return topActivity == null ? com.kunminx.architecture.utils.Utils.getApp() : topActivity;
+            return topActivity == null ? Utils.getApp() : topActivity;
         } else {
-            return com.kunminx.architecture.utils.Utils.getApp();
+            return Utils.getApp();
         }
     }
 
     static boolean isAppForeground() {
-        ActivityManager am = (ActivityManager) com.kunminx.architecture.utils.Utils.getApp().getSystemService(Context.ACTIVITY_SERVICE);
+        ActivityManager am = (ActivityManager) Utils.getApp().getSystemService(Context.ACTIVITY_SERVICE);
         if (am == null) {
             return false;
         }
@@ -152,7 +152,7 @@ public final class Utils {
         }
         for (ActivityManager.RunningAppProcessInfo aInfo : info) {
             if (aInfo.importance == ActivityManager.RunningAppProcessInfo.IMPORTANCE_FOREGROUND) {
-                return aInfo.processName.equals(com.kunminx.architecture.utils.Utils.getApp().getPackageName());
+                return aInfo.processName.equals(Utils.getApp().getPackageName());
             }
         }
         return false;
@@ -187,7 +187,7 @@ public final class Utils {
                 return;
             }
             InputMethodManager imm =
-                    (InputMethodManager) com.kunminx.architecture.utils.Utils.getApp().getSystemService(Context.INPUT_METHOD_SERVICE);
+                    (InputMethodManager) Utils.getApp().getSystemService(Context.INPUT_METHOD_SERVICE);
             if (imm == null) {
                 return;
             }
@@ -392,7 +392,7 @@ public final class Utils {
 
         @Override
         public boolean onCreate() {
-            com.kunminx.architecture.utils.Utils.init(getContext());
+            Utils.init(getContext());
             return true;
         }
     }

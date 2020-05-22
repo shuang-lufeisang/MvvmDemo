@@ -13,9 +13,6 @@ import android.util.Log;
 
 import androidx.annotation.RequiresPermission;
 
-import com.kunminx.architecture.utils.ShellUtils;
-import com.kunminx.architecture.utils.Utils;
-
 import java.lang.reflect.Method;
 import java.net.InetAddress;
 import java.net.InterfaceAddress;
@@ -281,13 +278,13 @@ public final class NetworkUtils {
      *
      * @return type of network
      * <ul>
-     * <li>{@link com.kunminx.architecture.utils.NetworkUtils.NetworkType#NETWORK_ETHERNET} </li>
-     * <li>{@link com.kunminx.architecture.utils.NetworkUtils.NetworkType#NETWORK_WIFI    } </li>
-     * <li>{@link com.kunminx.architecture.utils.NetworkUtils.NetworkType#NETWORK_4G      } </li>
-     * <li>{@link com.kunminx.architecture.utils.NetworkUtils.NetworkType#NETWORK_3G      } </li>
-     * <li>{@link com.kunminx.architecture.utils.NetworkUtils.NetworkType#NETWORK_2G      } </li>
-     * <li>{@link com.kunminx.architecture.utils.NetworkUtils.NetworkType#NETWORK_UNKNOWN } </li>
-     * <li>{@link com.kunminx.architecture.utils.NetworkUtils.NetworkType#NETWORK_NO      } </li>
+     * <li>{@link NetworkUtils.NetworkType#NETWORK_ETHERNET} </li>
+     * <li>{@link NetworkUtils.NetworkType#NETWORK_WIFI    } </li>
+     * <li>{@link NetworkUtils.NetworkType#NETWORK_4G      } </li>
+     * <li>{@link NetworkUtils.NetworkType#NETWORK_3G      } </li>
+     * <li>{@link NetworkUtils.NetworkType#NETWORK_2G      } </li>
+     * <li>{@link NetworkUtils.NetworkType#NETWORK_UNKNOWN } </li>
+     * <li>{@link NetworkUtils.NetworkType#NETWORK_NO      } </li>
      * </ul>
      */
     @RequiresPermission(ACCESS_NETWORK_STATE)

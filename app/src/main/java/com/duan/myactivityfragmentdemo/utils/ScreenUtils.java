@@ -20,8 +20,6 @@ import androidx.annotation.NonNull;
 import androidx.annotation.RequiresPermission;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.kunminx.architecture.utils.Utils;
-
 import static android.Manifest.permission.WRITE_SETTINGS;
 
 /**

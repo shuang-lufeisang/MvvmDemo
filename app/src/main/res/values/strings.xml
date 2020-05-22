@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MyActivityFragmentDemo</string>
+    <string name="app_name">MvvmDemo</string>
 
 
     <string name="tab_home" translatable="false">首页</string>
