@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_home"
+        android:icon="@drawable/hp_icon_home_normal"
+        android:title="@string/tab_home" />
+
+    <item
+        android:id="@+id/menu_trolley"
+        android:icon="@drawable/hp_icon_trolley_normal"
+        android:title="@string/tab_shopping_trolley" />
+
+    <item
+        android:id="@+id/id_empty"
+        android:title="" />
+
+    <item
+        android:id="@+id/menu_order"
+        android:icon="@drawable/hp_icon_order_normal"
+        android:title="@string/tab_order" />
+
+    <item
+        android:id="@+id/menu_me"
+        android:icon="@drawable/hp_icon_me_normal"
+        android:title="@string/tab_mine" />
+
+</menu>

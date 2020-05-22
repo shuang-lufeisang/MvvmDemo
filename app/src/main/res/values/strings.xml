@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MyActivityFragmentDemo</string>
+
+
+    <string name="tab_home" translatable="false">首页</string>
+    <string name="tab_shopping_trolley" translatable="false">购物车</string>
+    <string name="tab_center" translatable="false"></string>
+    <string name="tab_order" translatable="false">订单</string>
+    <string name="tab_mine" translatable="false">我的</string>
+
+    <string name="first_rv">Horizontal RecyclerView</string>
+    <string name="second_rv">Vertical RecyclerView</string>
+    <string name="page_position">Page %1$d</string>
+    <string name="item_position">Item %1$d</string>
+
+</resources>
