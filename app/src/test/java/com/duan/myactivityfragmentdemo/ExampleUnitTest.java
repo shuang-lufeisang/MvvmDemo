@@ -1,4 +1,4 @@
-package com.duan.MvvmDemo;
+package com.duan.mvvmdemo;
 
 import org.junit.Test;
 

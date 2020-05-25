@@ -1,4 +1,4 @@
-package com.duan.MvvmDemo;
+package com.duan.mvvmdemo;
 
 import android.content.Context;
 
@@ -22,6 +22,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
 
-        assertEquals("com.duan.MvvmDemo", appContext.getPackageName());
+        assertEquals("com.duan.mvvmdemo", appContext.getPackageName());
     }
 }
