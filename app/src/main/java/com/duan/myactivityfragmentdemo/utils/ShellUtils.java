@@ -1,4 +1,4 @@
-package com.duan.myactivityfragmentdemo.utils;
+package com.duan.MvvmDemo.utils;
 
 import androidx.annotation.NonNull;
 

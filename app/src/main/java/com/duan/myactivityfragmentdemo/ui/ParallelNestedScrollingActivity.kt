@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.duan.myactivityfragmentdemo.ui
+package com.duan.MvvmDemo.ui
 
 import android.annotation.SuppressLint
 import android.app.Activity
@@ -31,7 +31,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.ViewPager2
 import androidx.viewpager2.widget.ViewPager2.ORIENTATION_HORIZONTAL
-import com.duan.myactivityfragmentdemo.R
+import com.duan.MvvmDemo.R
 
 class ParallelNestedScrollingActivity : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {

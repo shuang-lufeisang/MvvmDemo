@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.duan.myactivityfragmentdemo.utils;
+package com.duan.MvvmDemo.utils;
 
 import android.content.ClipData;
 import android.content.Intent;

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.duan.myactivityfragmentdemo.bridge.state;
+package com.duan.MvvmDemo.bridge.state;
 
 import androidx.databinding.ObservableBoolean;
 import androidx.databinding.ObservableField;

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.duan.myactivityfragmentdemo.bridge.callback;
+package com.duan.MvvmDemo.bridge.callback;
 
 import androidx.lifecycle.ViewModel;
 

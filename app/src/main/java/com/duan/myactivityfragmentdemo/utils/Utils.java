@@ -1,4 +1,4 @@
-package com.duan.myactivityfragmentdemo.utils;
+package com.duan.MvvmDemo.utils;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;

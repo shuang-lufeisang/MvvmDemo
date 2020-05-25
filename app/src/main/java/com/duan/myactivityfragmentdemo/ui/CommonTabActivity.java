@@ -1,10 +1,10 @@
-package com.duan.myactivityfragmentdemo.ui;
+package com.duan.MvvmDemo.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import com.duan.myactivityfragmentdemo.R;
+import com.duan.MvvmDemo.R;
 
 public class CommonTabActivity extends AppCompatActivity {
 

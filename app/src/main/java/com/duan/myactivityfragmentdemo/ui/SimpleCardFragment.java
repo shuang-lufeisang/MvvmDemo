@@ -1,4 +1,4 @@
-package com.duan.myactivityfragmentdemo.ui;
+package com.duan.MvvmDemo.ui;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
@@ -10,7 +10,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
-import com.duan.myactivityfragmentdemo.R;
+import com.duan.MvvmDemo.R;
 
 
 @SuppressLint("ValidFragment")

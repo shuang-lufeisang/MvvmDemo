@@ -1,6 +1,6 @@
-package com.duan.myactivityfragmentdemo.ui.fragments;
+package com.duan.MvvmDemo.ui.fragments;
 
-import com.duan.myactivityfragmentdemo.base.BaseFragment;
+import com.duan.MvvmDemo.base.BaseFragment;
 
 /**
  * <pre>

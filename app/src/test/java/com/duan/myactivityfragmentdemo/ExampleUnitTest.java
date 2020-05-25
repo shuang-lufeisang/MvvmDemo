@@ -1,4 +1,4 @@
-package com.duan.myactivityfragmentdemo;
+package com.duan.MvvmDemo;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package com.duan.myactivityfragmentdemo.utils;
+package com.duan.MvvmDemo.utils;
 
 import android.content.res.Resources;
 import android.util.DisplayMetrics;

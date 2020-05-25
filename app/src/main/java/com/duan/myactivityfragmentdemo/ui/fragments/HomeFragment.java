@@ -1,4 +1,4 @@
-package com.duan.myactivityfragmentdemo.ui.fragments;
+package com.duan.MvvmDemo.ui.fragments;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -8,9 +8,9 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.duan.myactivityfragmentdemo.R;
-import com.duan.myactivityfragmentdemo.base.BaseFragment;
-import com.duan.myactivityfragmentdemo.databinding.FragmentHomeBinding;
+import com.duan.MvvmDemo.R;
+import com.duan.MvvmDemo.base.BaseFragment;
+import com.duan.MvvmDemo.databinding.FragmentHomeBinding;
 
 /**
  * <pre>

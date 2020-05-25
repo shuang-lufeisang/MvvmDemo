@@ -1,4 +1,4 @@
-package com.duan.myactivityfragmentdemo.entity;
+package com.duan.MvvmDemo.entity;
 
 import com.flyco.tablayout.listener.CustomTabEntity;
 

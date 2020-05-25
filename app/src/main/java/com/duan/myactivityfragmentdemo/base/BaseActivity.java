@@ -1,4 +1,4 @@
-package com.duan.myactivityfragmentdemo.base;
+package com.duan.MvvmDemo.base;
 
 import android.content.pm.ApplicationInfo;
 import android.content.res.Resources;
@@ -10,8 +10,8 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.duan.myactivityfragmentdemo.App;
-import com.duan.myactivityfragmentdemo.bridge.callback.SharedViewModel;
+import com.duan.MvvmDemo.App;
+import com.duan.MvvmDemo.bridge.callback.SharedViewModel;
 import com.kunminx.architecture.data.manager.NetworkStateManager;
 import com.kunminx.architecture.utils.AdaptScreenUtils;
 import com.kunminx.architecture.utils.BarUtils;

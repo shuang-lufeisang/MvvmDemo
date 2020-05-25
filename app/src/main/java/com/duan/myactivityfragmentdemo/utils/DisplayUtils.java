@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.duan.myactivityfragmentdemo.utils;
+package com.duan.MvvmDemo.utils;
 
 /**
  * Create by KunMinX at 19/7/20

@@ -1,4 +1,4 @@
-package com.duan.myactivityfragmentdemo;
+package com.duan.MvvmDemo;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,13 +11,13 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 
-import com.duan.myactivityfragmentdemo.adapter.SimpleHomeAdapter;
-import com.duan.myactivityfragmentdemo.base.BaseActivity;
-import com.duan.myactivityfragmentdemo.ui.BottomNavigationActivity;
-import com.duan.myactivityfragmentdemo.ui.BottomNavigationStylesActivity;
-import com.duan.myactivityfragmentdemo.ui.CommonTabActivity;
-import com.duan.myactivityfragmentdemo.ui.ParallelNestedScrollingActivity;
-import com.duan.myactivityfragmentdemo.ui.SlidingTabLayoutActivity;
+import com.duan.MvvmDemo.adapter.SimpleHomeAdapter;
+import com.duan.MvvmDemo.base.BaseActivity;
+import com.duan.MvvmDemo.ui.BottomNavigationActivity;
+import com.duan.MvvmDemo.ui.BottomNavigationStylesActivity;
+import com.duan.MvvmDemo.ui.CommonTabActivity;
+import com.duan.MvvmDemo.ui.ParallelNestedScrollingActivity;
+import com.duan.MvvmDemo.ui.SlidingTabLayoutActivity;
 
 public class MainActivity extends BaseActivity {
 

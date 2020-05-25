@@ -1,4 +1,4 @@
-package com.duan.myactivityfragmentdemo.adapter;
+package com.duan.MvvmDemo.adapter;
 
 import android.app.Activity;
 import android.content.Context;

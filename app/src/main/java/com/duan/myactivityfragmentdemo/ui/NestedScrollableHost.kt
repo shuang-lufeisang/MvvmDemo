@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.duan.myactivityfragmentdemo.ui
+package com.duan.MvvmDemo.ui
 
 import android.content.Context
 import android.util.AttributeSet

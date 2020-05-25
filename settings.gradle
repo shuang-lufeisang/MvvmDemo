@@ -1,2 +1,2 @@
-rootProject.name='MyActivityFragmentDemo'
+rootProject.name='MvvmDemo'
 include ':app', ':architecture'

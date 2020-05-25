@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.duan.myactivityfragmentdemo;
+package com.duan.MvvmDemo;
 
 import android.app.Activity;
 import android.app.Application;
