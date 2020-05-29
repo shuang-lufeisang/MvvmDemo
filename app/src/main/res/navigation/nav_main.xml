@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@layout/fragment_home"
+    tools:ignore="UnusedNavigation">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.duan.mvvmdemo.ui.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_home_to_mine"
+            app:destination="@+id/mineFragment"
+            app:enterAnim="@anim/h_fragment_enter"
+            app:exitAnim="@anim/h_fragment_exit"
+            app:popEnterAnim="@anim/h_fragment_pop_enter"
+            app:popExitAnim="@anim/h_fragment_pop_exit" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/mineFragment"
+        android:name="com.duan.mvvmdemo.ui.fragments.MineFragment"
+        android:label="fragment_mine"
+        tools:layout="@layout/fragment_mine">
+
+    </fragment>
+
+</navigation>

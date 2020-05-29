@@ -16,7 +16,7 @@ import com.duan.mvvmdemo.databinding.FragmentHomeBinding;
  * <pre>
  * author : Duan
  * time : 2020/05/22
- * desc :
+ * desc :  首页
  * version: 1.0.0
  * </pre>
  */
@@ -27,6 +27,7 @@ public class HomeFragment extends BaseFragment {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        // TODO: 2020/5/25 初始化 ViewModel
     }
 
     @Nullable
@@ -38,4 +39,5 @@ public class HomeFragment extends BaseFragment {
 //        mBinding.setVm(mMainViewModel);
         return view;
     }
+
 }

@@ -29,9 +29,9 @@ import androidx.viewpager.widget.PagerAdapter;
  */
 public class CommonViewPagerAdapter extends PagerAdapter {
 
-    private final int count;
+    private final int count;                     // 标题数
     private final boolean enableDestroyItem;
-    private final String[] title;
+    private final String[] title;                // 标题数组
 
     public CommonViewPagerAdapter(int count, boolean enableDestroyItem, String[] title) {
         this.count = count;

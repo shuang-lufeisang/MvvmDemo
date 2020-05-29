@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+
+        <variable
+            name="click"
+            type="com.duan.mvvmdemo.ui.SlidingTabLayoutActivity.ClickProxy" />
+
+        <variable
+            name="vm"
+            type="com.duan.mvvmdemo.bridge.state.MainActivityViewModel" />
+    </data>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout"
+            initTabAndPage="@{vm.initTabAndPage}"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:fitsSystemWindows="true"
+            app:tabBackground="@color/white"
+
+            app:tabIndicatorColor="@color/colorPrimary"
+            app:tabIndicatorHeight="4dp"
+            app:tabIndicator="@color/colorAccent"
+            app:tabIndicatorFullWidth="false"
+            app:tabIndicatorGravity="bottom"
+
+            app:tabSelectedTextColor="@color/black"
+            app:tabTextColor="@color/light_gray">
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/recently" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/best_practice" />
+
+        </com.google.android.material.tabs.TabLayout>
+
+<!--        androidx.viewpager.widget.ViewPager
+ com.duan.mvvmdemo.ui.view.NoSlidingViewPager  不可左右滑动的ViewPager -->
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/adapter_play_item" />
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <WebView
+                    android:id="@+id/web_view"
+                    pageAssetPath="@{vm.pageAssetPath}"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clipToPadding="false" />
+
+            </androidx.core.widget.NestedScrollView>
+
+        </androidx.viewpager.widget.ViewPager>
+
+    </LinearLayout>
+</layout>

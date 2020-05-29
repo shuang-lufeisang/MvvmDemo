@@ -14,6 +14,7 @@ import com.duan.mvvmdemo.ui.BottomNavigationActivity;
 import com.duan.mvvmdemo.ui.BottomNavigationStylesActivity;
 import com.duan.mvvmdemo.ui.CommonTabActivity;
 import com.duan.mvvmdemo.ui.ParallelNestedScrollingActivity;
+import com.duan.mvvmdemo.ui.SlidingScaleTabLayoutActivity;
 import com.duan.mvvmdemo.ui.SlidingTabLayoutActivity;
 
 public class MainActivity extends BaseActivity {
@@ -21,6 +22,7 @@ public class MainActivity extends BaseActivity {
     private Context mContext = this;
 
     private final String[] mItems = {
+            "SlidingScaleTabLayout",
             "SlidingTabLayout",
             "BottomNavigationView",
             "BottomNavigationStyles",
@@ -30,6 +32,7 @@ public class MainActivity extends BaseActivity {
 
     private final Class<?>[] mClasses = {
 
+            SlidingScaleTabLayoutActivity.class,
             SlidingTabLayoutActivity.class,
             BottomNavigationActivity.class,
             BottomNavigationStylesActivity.class,
@@ -57,4 +60,5 @@ public class MainActivity extends BaseActivity {
 
         setContentView(listView);
     }
+
 }

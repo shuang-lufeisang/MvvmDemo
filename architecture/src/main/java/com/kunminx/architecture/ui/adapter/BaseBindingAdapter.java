@@ -33,6 +33,7 @@ import java.util.List;
 /**
  * @author KunMinX
  * Create at 2018/6/30
+ * <M, B extends ViewDataBinding>: M -数据 Modle; B - extends ViewDataBinding extends BaseObservable implements ViewBinding
  */
 public abstract class BaseBindingAdapter<M, B extends ViewDataBinding> extends RecyclerView.Adapter {
 
@@ -72,6 +73,12 @@ public abstract class BaseBindingAdapter<M, B extends ViewDataBinding> extends R
         }
     }
 
+    /**
+     * 适配器布局 允许多类型
+     *
+     * @param viewType 布局类型
+     * @return
+     */
     protected abstract @LayoutRes
     int getLayoutResId(int viewType);
 
@@ -80,8 +87,8 @@ public abstract class BaseBindingAdapter<M, B extends ViewDataBinding> extends R
      * RecyclerView 中的数据有位置改变（比如删除）时一般不会重新调用 onBindViewHolder() 方法，除非这个元素不可用。
      * 为了实时获取元素的位置，我们通过 ViewHolder.getAdapterPosition() 方法。
      *
-     * @param binding .
-     * @param item    .
+     * @param binding . extends ViewDataBinding extends BaseObservable implements ViewBinding
+     * @param item    . 数据 model
      * @param holder  .
      */
     protected abstract void onBindItem(B binding, M item, RecyclerView.ViewHolder holder);

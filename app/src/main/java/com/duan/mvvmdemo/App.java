@@ -25,6 +25,7 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.lifecycle.ViewModelStore;
 import androidx.lifecycle.ViewModelStoreOwner;
 
+import com.duan.mvvmdemo.player.PlayerManager;
 import com.kunminx.architecture.utils.Utils;
 
 /**
@@ -45,8 +46,8 @@ public class App extends Application implements ViewModelStoreOwner {
 
         mAppViewModelStore = new ViewModelStore();
 
-
         Utils.init(this);
+        PlayerManager.getInstance().init(this);
 
     }
 

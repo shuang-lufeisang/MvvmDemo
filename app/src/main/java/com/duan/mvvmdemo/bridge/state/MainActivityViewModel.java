@@ -16,6 +16,8 @@
 
 package com.duan.mvvmdemo.bridge.state;
 
+import androidx.databinding.ObservableBoolean;
+import androidx.databinding.ObservableField;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
@@ -37,12 +39,17 @@ public class MainActivityViewModel extends ViewModel {
     // 记得在视图控制器中要加入 mBinding.setLifecycleOwner(this);
     //详见 https://xiaozhuanlan.com/topic/9816742350
 
-    public final MutableLiveData<Boolean> openDrawer = new MutableLiveData<>();
+    public final MutableLiveData<Boolean> showToBuyer = new MutableLiveData<>();  // 买家身份
 
-    public final MutableLiveData<Boolean> allowDrawerOpen = new MutableLiveData<>();
+    public final MutableLiveData<Boolean> showToShop = new MutableLiveData<>();   // 商户身份
+
+
+    public final ObservableBoolean initTabAndPage = new ObservableBoolean();           // init TabLayout and ViewPager
+
+    public final ObservableField<String> pageAssetPath = new ObservableField<>();
 
     public void initState(){
-        allowDrawerOpen.setValue(true);
-        openDrawer.setValue(false);
+        showToBuyer.setValue(true); // 默认打开买家身份
+        showToShop.setValue(false); // 默认关闭商户身份
     }
 }

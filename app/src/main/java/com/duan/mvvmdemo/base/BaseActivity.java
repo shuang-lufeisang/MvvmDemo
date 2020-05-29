@@ -2,7 +2,6 @@ package com.duan.mvvmdemo.base;
 
 import android.content.pm.ApplicationInfo;
 import android.content.res.Resources;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.widget.Toast;
 
@@ -14,7 +13,6 @@ import com.duan.mvvmdemo.App;
 import com.duan.mvvmdemo.bridge.callback.SharedViewModel;
 import com.kunminx.architecture.data.manager.NetworkStateManager;
 import com.kunminx.architecture.utils.AdaptScreenUtils;
-import com.kunminx.architecture.utils.BarUtils;
 import com.kunminx.architecture.utils.ScreenUtils;
 
 /**
@@ -34,8 +32,8 @@ public class BaseActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-       // BarUtils.setStatusBarColor(this, Color.TRANSPARENT);
-       // BarUtils.setStatusBarLightMode(this, true);
+//        BarUtils.setStatusBarColor(this, Color.TRANSPARENT);
+//        BarUtils.setStatusBarLightMode(this, true);
 
         mSharedViewModel = getAppViewModelProvider().get(SharedViewModel.class);
 
